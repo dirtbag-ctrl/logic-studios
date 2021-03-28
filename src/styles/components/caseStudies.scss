@@ -1,0 +1,38 @@
+.wrapper {
+  text-align: center;
+
+  .case-title {
+    font-size: 100px;
+   
+    @include media("<=phone") {
+      font-size: 40px;
+    }
+    @include media("<=tablet") {
+      font-size: 40px;
+    }
+  }
+
+  .case-img-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.project-intro-wrapper {
+  margin-top: 40px;
+}
+
+.project-name {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 15px;
+  @media #{$xs-layout} {
+    font-size: 24px;
+
+  }
+}
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+.app-name {
+  color: black;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-left: 45px;
+  font-size: 20px;
+
+  cursor: pointer;
+  @media #{$xs-layout} {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+}
+.menu-open {
+  color: black;
+  margin-right: 45px;
+  font-weight: bold;
+  font-size: 19px;
+  cursor: pointer;
+  @media #{$xs-layout} {
+    margin-right: 20px;
+    font-size: 17px;
+  }
+}

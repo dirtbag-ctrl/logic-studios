@@ -1,0 +1,82 @@
+.nav1 {
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  left: 0%;
+  background: #131313;
+  z-index: 1000;
+}
+
+.menu-close-wrapper{
+  position: absolute;
+  top: 0;
+  right: 3%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-items {
+  margin: 60px;
+}
+
+.nav-item {
+  position: relative;
+  font-size: 120px;
+}
+
+.nav-item a {
+  position: relative;
+  top: 140px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Monument Extended";
+  font-size: 140px;
+  font-weight: lighter;
+  letter-spacing: -8px;
+  transition: 1s;
+}
+
+.nav-item-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background: #131313;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 0%;
+  height: 2.8px;
+  background: red;
+  transition: 0.3s;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+ 
+
+  .nav-item a {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+
+  .nav-item:after {
+    display: none;
+  }
+}
